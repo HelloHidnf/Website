@@ -40,6 +40,13 @@ window.onload = () => {
     anime.set('.social', { translateY: '-10px', opacity: 0 });
 
     anime({
+        targets: '.loading-indicator',
+        translateX: '100%',
+        opacity: 0,
+        duration: 3000
+    })
+
+    anime({
         targets: '.background-stripe-left',
         marginLeft: '0%',
         width: '50%',
